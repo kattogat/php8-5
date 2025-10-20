@@ -159,6 +159,7 @@ banner__button {
 .banner__button--white {
     background-color: var(--white);
     color: var(--php-purple);
+    margin-right: 1.6rem;
 }
 
 .banner__button--purple {
