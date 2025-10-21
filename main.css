@@ -92,7 +92,7 @@ a {
     color: var(--php-purple-light);
 }
 
-button {
+.button {
     cursor: pointer;
     font-size: var(--font-18);
 
@@ -355,8 +355,34 @@ button {
 }
 
 .buttonbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     margin-top: 4.8rem;
     margin-bottom: 4.8rem;
+}
+
+.buttonbar__input {
+    display: none;
+}
+
+.buttonbar__label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    padding: 1rem 3.2rem;
+    margin-left: 1.2rem;
+
+    background-color: var(--grey-bg);
+}
+
+.buttonbar input:checked + label {
+  background-color: var(--php-purple);
+  color: var(--white);
 }
 
 .comparison__subheading {
