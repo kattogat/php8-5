@@ -119,6 +119,10 @@ button {
     margin-left: 0.7rem;
 }
 
+.space-right-64 {
+    margin-right: 6.4rem;
+}
+
 .no-margin {
     margin: 0 !important;
 }
@@ -274,7 +278,7 @@ button {
 
 .code-block {
     background-color: var(--code-bg);
-    width: 51.2rem;
+    width: 55rem;
     border-radius: 1.4rem;
 }
 

@@ -37,7 +37,7 @@
                 <h2 class="base__title">Major Features in PHP 8.5</h2>
                 <div class="space-top-8">
                     <article class="feature no-margin">
-                        <div class="feature_content">
+                        <div class="feature_content space-right-64">
                             <div class="feature__block">
                                 <div class="the-thing space-right-16">
                                     <img src="assets/sparkle.svg">
@@ -80,6 +80,49 @@
 </pre>
                                 </code>
                             </div>
+                        </div>
+                    </article>
+                    <article class="feature">
+                        <div class="feature_content space-right-64">
+                            <div class="code-block">
+                                <div class="code-block__header">
+                                    <div class="code-dots">
+                                        <span class="code-dot code-dot--red"></span>
+                                        <span class="code-dot code-dot--yellow"></span>
+                                        <span class="code-dot code-dot--green"></span>
+                                    </div>
+                                    <p class="code-title">example.php </p>
+                                </div>
+                                <code class="code-block__body">
+<!-- This is a very ugly solution, may future me have a better idea... -->
+<pre>
+class Post {
+    // Public read, private write
+    public private(set) string $id;
+    public private(set) DateTime $createdAt;
+    
+    public function __construct() {
+        $this->id = uniqid();
+        $this->createdAt = new DateTime();
+    }
+}
+</pre>
+                                </code>
+                            </div>
+                        </div>
+                        <div class="feature_content">
+                            <div class="feature__block">
+                                <div class="the-thing space-right-16">
+                                    <img src="assets/lock.svg">
+                                </div>
+                                <span class="badge">New</span>
+                            </div>
+                            <h3 class="feature__title">Asymmetric visibility</h3>
+                            <p class="feature__text">
+                                Control read and write access independently. Make properties publicly readable but 
+                                privately writable without verbose getter methods.
+                            </p>
+                            <a href="#" class="feature__link">Learn more<img src="assets/chaveron-right.svg" class="space-left-7"></a>
                         </div>
                     </article>
                 </div>
