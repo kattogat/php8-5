@@ -237,7 +237,7 @@ button {
     background-color: var(--php-purple);
     border-radius: 2rem;
     padding: 0.4rem 1rem;
-    width: fit-content;
+    min-width: fit-content;
     height: fit-content;
 
     color: var(--white);
@@ -248,6 +248,14 @@ button {
 .badge--white {
     background-color: var(--php-white);
     color: var(--font-color);
+}
+
+.badge--green {
+    background-color: #009966;
+}
+
+.badge--gray {
+    background-color: #364153;
 }
 
 /* FIXME: Rename */
