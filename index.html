@@ -302,7 +302,7 @@
                 <div class="notes">
                     <article class="notes__block">
                         <div class="notes__heading">
-                            <div class="the-thing space-right-16">
+                            <div class="the-thing the-thing--green space-right-16">
                                 <img src="assets/sparkle.svg">
                             </div>
                             <div>
@@ -322,8 +322,15 @@
                         </ul>
                     </article>
                     <article class="notes__block">
-                        <h3 class="notes__subheading">Deprecations & BC Breaks</h3>
-                        <p class="notes__text">Important changes to review</p>
+                        <div class="notes__heading">
+                            <div class="the-thing the-thing--yellow space-right-16">
+                                <img src="assets/warning.svg">
+                            </div>
+                            <div>
+                                <h3 class="notes__subheading">Deprecations & BC Breaks</h3>
+                                <p class="notes__text">Important changes to review</p>
+                            </div>
+                        </div>
                         <ul class="notes__list notes__list--red ">
                             <li>Deprecated implicitly nullable parameter declarations</li>
                             <li>Deprecated passing E_USER_ERROR to <br><code class="notes__code">trigger_error()</code><code class="notes__code">trigger_error()</code>

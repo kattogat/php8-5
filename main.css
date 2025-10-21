@@ -271,6 +271,14 @@ a {
     background-color: var(--php-white);
 }
 
+.the-thing--green {
+    background-color: #DCFCE7;
+}
+
+.the-thing--yellow {
+    background-color: #FFEDD4;
+}
+
 .feature {
     margin-top: 12.8rem;
 
@@ -413,7 +421,7 @@ a {
     padding-left: 5.2rem;
     padding-right: 3.2rem;
     padding-bottom: 3.2rem;
-    padding-top: 2.4rem;
+    padding-top: 3.4rem;
 
     border: #E5E7EB solid 2px;
     border-radius: 1.6rem;
