@@ -96,16 +96,16 @@
                                 <code class="code-block__body">
 <!-- This is a very ugly solution, may future me have a better idea... -->
 <pre>
-class Post {
-    // Public read, private write
-    public private(set) string $id;
-    public private(set) DateTime $createdAt;
-    
-    public function __construct() {
-        $this->id = uniqid();
-        $this->createdAt = new DateTime();
+    class Post {
+        // Public read, private write
+        public private(set) string $id;
+        public private(set) DateTime $createdAt;
+        
+        public function __construct() {
+            $this->id = uniqid();
+            $this->createdAt = new DateTime();
+        }
     }
-}
 </pre>
                                 </code>
                             </div>
@@ -123,6 +123,48 @@ class Post {
                                 privately writable without verbose getter methods.
                             </p>
                             <a href="#" class="feature__link">Learn more<img src="assets/chaveron-right.svg" class="space-left-7"></a>
+                        </div>
+                    </article>
+                    <article class="feature">
+                        <div class="feature_content space-right-64">
+                            <div class="feature__block">
+                                <div class="the-thing space-right-16">
+                                    <img src="assets/function.svg">
+                                </div>
+                                <span class="badge badge--white">Enhanced</span>
+                            </div>
+                            <h3 class="feature__title">New array functions</h3>
+                            <p class="feature__text">
+                                Powerful array manipulation utilities that make common operations more expressive and 
+                                reduce the need for custom implementations.
+                            </p>
+                            <a href="#" class="feature__link">Learn more<img src="assets/chaveron-right.svg" class="space-left-7"></a>
+                        </div>
+                        <div class="feature_content">
+                            <div class="code-block">
+                                <div class="code-block__header">
+                                    <div class="code-dots">
+                                        <span class="code-dot code-dot--red"></span>
+                                        <span class="code-dot code-dot--yellow"></span>
+                                        <span class="code-dot code-dot--green"></span>
+                                    </div>
+                                    <p class="code-title">example.php </p>
+                                </div>
+                                <code class="code-block__body">
+<!-- This is a very ugly solution, may future me have a better idea... -->
+<pre>
+    // array_find - get first matching element
+    $user = array_find($users, fn($u) => $u->id === 42);
+
+    // array_find_key - get first matching key
+    $key = array_find_key($data, fn($v) => $v > 100);
+
+    // array_any / array_all - existence checks
+    $hasAdmin = array_any($users, fn($u) => $u->isAdmin);
+    $allActive = array_all($users, fn($u) => $u->active);
+</pre>
+                                </code>
+                            </div>
                         </div>
                     </article>
                 </div>
