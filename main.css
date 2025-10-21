@@ -432,6 +432,10 @@ a {
     font-size: var(--font-16);
 }
 
+.notes__block:first-of-type {
+    margin-left: 0;
+}
+
 .notes__heading {
     display: flex;
     flex-direction: row;
