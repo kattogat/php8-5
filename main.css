@@ -112,12 +112,16 @@ button {
     margin-top: 8rem;
 }
 
+.space-left-7 {
+    margin-left: 0.7rem;
+}
+
 .space-right-16 {
     margin-right: 1.6rem;
 }
 
-.space-left-7 {
-    margin-left: 0.7rem;
+.space-top-16 {
+    margin-top: 1.6rem;
 }
 
 .space-right-64 {
@@ -144,6 +148,7 @@ button {
     grid-area: 2 / 2 / 3 / 3;
 
     margin-top: 8rem;
+    margin-bottom: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,7 +156,12 @@ button {
 }
 
 .base__title {
-    margin-top: 1rem;
+    margin-top: 2rem;
+}
+
+.base__subtitle {
+    margin-top: 2.4rem;
+    font-size: var(--font-20);
 }
 
 .banner {
@@ -217,6 +227,11 @@ button {
     color: var(--white);
 }
 
+.text {
+    color: var(--font-color-lighter);
+    line-height: 3rem;
+}
+
 .badge {
     display: block;
     background-color: var(--php-purple);
@@ -255,7 +270,7 @@ button {
     flex-direction: row;
 }
 
-.feature_content {
+.feature__content {
     max-width: 50%;
 }
 
@@ -267,11 +282,6 @@ button {
 .feature__title {
     margin-top: 2.4rem;
     margin-bottom: 2.4rem;
-}
-
-.feature__text {
-    color: var(--font-color-lighter);
-    line-height: 3rem;
 }
 
 .feature__link {
@@ -324,7 +334,6 @@ button {
 }
 
 .code-title {
-    text-align: center;
     width: 100%;
     font-size: var(--font-12);
 }
@@ -335,4 +344,24 @@ button {
     color: var(--code-code);
     font-size: var(--font-14);
     line-height: 2.2rem;
+}
+
+.buttonbar {
+    margin-top: 4.8rem;
+    margin-bottom: 4.8rem;
+}
+
+.comparison__subheading {
+    text-align: center;
+}
+
+.comparison__code {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 3.2rem;
+}
+
+.comparison__code > .code-block {
+    margin-right: 2.4rem;
 }

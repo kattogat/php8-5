@@ -37,7 +37,7 @@
                 <h2 class="base__title">Major Features in PHP 8.5</h2>
                 <div class="space-top-8">
                     <article class="feature no-margin">
-                        <div class="feature_content space-right-64">
+                        <div class="feature__content space-right-64">
                             <div class="feature__block">
                                 <div class="the-thing space-right-16">
                                     <img src="assets/sparkle.svg">
@@ -45,12 +45,12 @@
                                 <span class="badge">New</span>
                             </div>
                             <h3 class="feature__title">Property hooks</h3>
-                            <p class="feature__text">Define getter and setter logic directly on properties with a clean, 
+                            <p class="text">Define getter and setter logic directly on properties with a clean, 
                                 intuitive syntax. Reduce boilerplate while maintaining encapsulation.
                             </p>
                             <a href="#" class="feature__link">Learn more<img src="assets/chaveron-right.svg" class="space-left-7"></a>
                         </div>
-                        <div class="feature_content">
+                        <div class="feature__content">
                             <div class="code-block">
                                 <div class="code-block__header">
                                     <div class="code-dots">
@@ -83,7 +83,7 @@
                         </div>
                     </article>
                     <article class="feature">
-                        <div class="feature_content space-right-64">
+                        <div class="feature__content space-right-64">
                             <div class="code-block">
                                 <div class="code-block__header">
                                     <div class="code-dots">
@@ -110,7 +110,7 @@
                                 </code>
                             </div>
                         </div>
-                        <div class="feature_content">
+                        <div class="feature__content">
                             <div class="feature__block">
                                 <div class="the-thing space-right-16">
                                     <img src="assets/lock.svg">
@@ -118,7 +118,7 @@
                                 <span class="badge">New</span>
                             </div>
                             <h3 class="feature__title">Asymmetric visibility</h3>
-                            <p class="feature__text">
+                            <p class="text">
                                 Control read and write access independently. Make properties publicly readable but 
                                 privately writable without verbose getter methods.
                             </p>
@@ -126,7 +126,7 @@
                         </div>
                     </article>
                     <article class="feature">
-                        <div class="feature_content space-right-64">
+                        <div class="feature__content space-right-64">
                             <div class="feature__block">
                                 <div class="the-thing space-right-16">
                                     <img src="assets/function.svg">
@@ -134,13 +134,13 @@
                                 <span class="badge badge--white">Enhanced</span>
                             </div>
                             <h3 class="feature__title">New array functions</h3>
-                            <p class="feature__text">
+                            <p class="text">
                                 Powerful array manipulation utilities that make common operations more expressive and 
                                 reduce the need for custom implementations.
                             </p>
                             <a href="#" class="feature__link">Learn more<img src="assets/chaveron-right.svg" class="space-left-7"></a>
                         </div>
-                        <div class="feature_content">
+                        <div class="feature__content">
                             <div class="code-block">
                                 <div class="code-block__header">
                                     <div class="code-dots">
@@ -168,7 +168,7 @@
                         </div>
                     </article>
                     <article class="feature">
-                        <div class="feature_content space-right-64">
+                        <div class="feature__content space-right-64">
                             <div class="code-block">
                                 <div class="code-block__header">
                                     <div class="code-dots">
@@ -192,7 +192,7 @@
                                 </code>
                             </div>
                         </div>
-                        <div class="feature_content">
+                        <div class="feature__content">
                             <div class="feature__block">
                                 <div class="the-thing space-right-16">
                                     <img src="assets/lighting.svg">
@@ -200,7 +200,7 @@
                                 <span class="badge badge--white">Improved</span>
                             </div>
                             <h3 class="feature__title">Performance improvements</h3>
-                            <p class="feature__text">
+                            <p class="text">
                                 Optimizations across the engine result in faster execution times, reduced memory 
                                 usage, and improved overall application performance.
                             </p>
@@ -210,6 +210,78 @@
                 </div>
             </div>
         </section>
+        <section class="base">
+            <div class="base__wrapper">
+                <span class="badge">See the difference</span>
+                <h2 class="base__title">Before & After</h2>
+                <p class="base__subtitle text">See how PHP 8.5 simplifies your code with side-by-side comparisons</p>
+                <div class="buttonbar">
+
+                </div>
+                <div class="comparison__subheading">
+                    <h3>Property hooks</h3>
+                    <p class="text space-top-16">Eliminate boilerplate getter/setter methods with property hooks</p>
+                </div>
+                <div class="comparison__code">
+                    <div class="code-block">
+                        <div class="code-block__header">
+                            <div class="code-dots">
+                                <span class="code-dot code-dot--red"></span>
+                                <span class="code-dot code-dot--yellow"></span>
+                                <span class="code-dot code-dot--green"></span>
+                            </div>
+                            <p class="code-title">example.php </p>
+                        </div>
+                        <code class="code-block__body">
+                            <!-- This is a very ugly solution, may future me have a better idea... -->
+<pre>
+    class User {
+        private string $name;
+        
+        public function getName(): string {
+            return $this->name;
+        }
+        
+        public function setName(string $name): void {
+            $this->name = ucfirst($name);
+        }
+    }
+
+    $user = new User();
+    $user->setName('john');
+    echo $user->getName(); // John
+</pre>
+                        </code>
+                    </div>
+                    <div class="code-block">
+                        <div class="code-block__header">
+                            <div class="code-dots">
+                                <span class="code-dot code-dot--red"></span>
+                                <span class="code-dot code-dot--yellow"></span>
+                                <span class="code-dot code-dot--green"></span>
+                            </div>
+                            <p class="code-title">example.php </p>
+                        </div>
+                        <code class="code-block__body">
+                            <!-- This is a very ugly solution, may future me have a better idea... -->
+<pre>
+    class User {
+        public string $name {
+            set => ucfirst($value);
+        }
+    }
+
+    $user = new User();
+    $user->name = 'john';
+    echo $user->name; // John
+</pre>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 </body>
 </html>
