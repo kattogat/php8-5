@@ -184,8 +184,12 @@ button {
     margin-right: 1rem;
 }
 
-banner__button {
+.banner__button {
     margin-top: 3.2rem;
+}
+
+.banner__button > img {
+    margin-left: 1rem;
 }
 
 .banner__button--white {
