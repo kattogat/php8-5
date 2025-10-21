@@ -146,6 +146,7 @@ a {
 
 .base__wrapper { 
     grid-area: 2 / 2 / 3 / 3;
+    max-width: 112.8rem;
 
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -469,4 +470,36 @@ a {
     background-color: var(--code-code);
     color: var(--php-purple);
     font-size: var(--font-14);
+}
+
+.callout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 8rem;
+    padding: 3.4rem;
+
+    background: linear-gradient(135deg, rgba(119, 123, 179, 0.1) 0%, rgba(93, 94, 153, 0.1) 100%);
+    border: #777BB333 2px solid;
+    border-radius: 1.6rem;
+}
+
+.callout__button {
+    height: fit-content;
+    line-height: normal;
+    background-color: var(--php-purple);
+    color: var(--white);
+}
+
+.callout__title {
+    font-size: var(--font-20);
+}
+
+.callout__text {
+    max-width: 60rem;
+    font-size: var(--font-16);
+    line-height: 2.4rem;
 }
