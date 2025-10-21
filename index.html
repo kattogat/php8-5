@@ -293,7 +293,53 @@
                 </div>
             </div>
         </section>
+        <section class="base gray">
+            <div class="base__wrapper">
+                <span class="badge">Release Notes</span>
+                <h2 class="base__title">What's Changed in PHP 8.5</h2>
+                <p class="base__subtitle text">Explore the latest additions, improvements, and important changes to be aware of</p>
 
+                <div class="notes">
+                    <article class="notes__block">
+                        <div class="notes__heading">
+                            <div class="the-thing space-right-16">
+                                <img src="assets/sparkle.svg">
+                            </div>
+                            <div>
+                                <h3 class="notes__subheading">New Features & Functions</h3>
+                                <p class="notes__text">Fresh additions to PHP 8.5</p>
+                            </div>
+                        </div>
+                        <ul class="notes__list notes__list--green ">
+                            <li>New array search and validation functions<br><code class="notes__code">array_find()</code><code class="notes__code">array_find_key()</code><code class="notes__code">array_any()</code><code class="notes__code">array_all()</code></li>
+                            <li>Property hooks for cleaner getter/setter implementation</li>
+                            <li>Asymmetric visibility modifiers for properties</li>
+                            <li>PDO driver-specific subclasses for better type safety</li>
+                            <li>New OpenSSL cryptographic functions<br><code class="notes__code">openssl_cipher_key_length()</code></li>
+                            <li>Enhanced DOM and XML functionality</li>
+                            <li>New request parsing control with ini settings</li>
+                            <li>Improved PDO error handling and driver capabilities</li>
+                        </ul>
+                    </article>
+                    <article class="notes__block">
+                        <h3 class="notes__subheading">Deprecations & BC Breaks</h3>
+                        <p class="notes__text">Important changes to review</p>
+                        <ul class="notes__list notes__list--red ">
+                            <li>Deprecated implicitly nullable parameter declarations</li>
+                            <li>Deprecated passing E_USER_ERROR to <br><code class="notes__code">trigger_error()</code><code class="notes__code">trigger_error()</code>
+                            </li>
+                            <li>Deprecated XML object handler functions<br><code class="notes__code">xml_set_object()</code><code class="notes__code">xml_set_*_handler()</code>
+                            </li>
+                            <li>Deprecated ArrayAccess::offsetGet() returning by reference<br><code class="notes__code">ArrayAccess::offsetGet()</code>
+                            </li>
+                            <li>Changes to unserialize() callback validation<br><code class="notes__code">unserialize()</code>
+                            </li>
+                            <li>Modified behavior for DateTime interface methods</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
     </main>
 </body>
