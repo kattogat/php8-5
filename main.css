@@ -115,6 +115,10 @@ button {
     margin-right: 1.6rem;
 }
 
+.space-left-7 {
+    margin-left: 0.7rem;
+}
+
 .no-margin {
     margin: 0 !important;
 }
@@ -263,6 +267,7 @@ button {
 .feature__link {
     display: block;
     margin-top: 4rem;
+    width: fit-content;
 
     font-size: var(--font-16);
 }
