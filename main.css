@@ -416,7 +416,7 @@ a {
     margin-top: 3.2rem;
 }
 
-.comparison__code > .code-block {
+.comparison__code > .code-block:not(:last-child) {
     margin-right: 2.4rem;
 }
 
@@ -652,4 +652,42 @@ a {
 .block-link-white {
     filter: grayscale(1) brightness(0.1) invert(1);
     width: 2.1rem;
+}
+
+@media screen and (max-width: 1425px) {
+    .feature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature--reverse {
+        flex-direction: column-reverse;
+    }
+
+    .feature__content {
+        width: auto;
+        max-width: none;
+    }
+
+    .code-block {
+        margin-top: 5.1rem;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .comparison__code {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1056px) {
+    .notes {
+        flex-direction: column;
+    }
+
+    .notes__block {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2.4rem;
+    }
 }
