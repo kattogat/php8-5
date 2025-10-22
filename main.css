@@ -619,6 +619,7 @@ a {
     flex-direction: row;
     align-items: center;
     width: 100%;
+    cursor: pointer;
 
     background: linear-gradient(90deg, #F9FAFB 0%, #FFFFFF 100%);
     border: #E5E7EB solid 2px;
