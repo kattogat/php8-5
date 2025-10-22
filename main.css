@@ -607,7 +607,6 @@ a {
 }
 
 .resources {
-    color: var(--font-color-lighter);
     margin-top: 4.8rem;
     max-width: 83rem;
     width: 100%;
@@ -625,10 +624,16 @@ a {
     border: #E5E7EB solid 2px;
     border-radius: 1.4rem;
     padding: 2.4rem;
+    color: var(--font-color);
 }
 
 .block-link:not(:last-child) { 
    margin-bottom: 1.6rem;
+}
+
+.block-link__text {
+    color: var(--font-color-lighter);
+    margin-top: 1rem;
 }
 
 .block-link__icon {
