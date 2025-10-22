@@ -162,6 +162,7 @@ a {
 
 .base__title {
     margin-top: 2rem;
+    line-height: normal;
 }
 
 .base__subtitle {
@@ -368,6 +369,8 @@ a {
 
 .code-block__body {
     padding: 2.6rem 2.4rem;
+    display: block;
+    overflow-x: auto;
 
     color: var(--code-code);
     font-size: var(--font-14);
@@ -477,6 +480,7 @@ a {
 }
 
 .notes__code {
+    display: inline-block;
     border-radius: 0.4rem;
     border: #E5E7EB 1px solid;
     padding: 0.5rem 0.9rem;
@@ -485,6 +489,7 @@ a {
     background-color: var(--code-code);
     color: var(--php-purple);
     font-size: var(--font-14);
+    line-height: normal;
 }
 
 .callout {
@@ -689,5 +694,54 @@ a {
         width: 100%;
         margin-left: 0;
         margin-top: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 939px) {
+    .banner {
+        height: 70vh;
+    }
+
+    .callout {
+        flex-direction: column;
+    }
+
+    .callout__content {
+        margin-bottom: 2.4rem;
+    }
+
+    .download {
+        flex-direction: column;
+    }
+
+    .download__block:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .download__block:not(:last-child) { 
+        margin-bottom: 1.6rem;
+    }
+
+    .buttonbar {
+        flex-direction: column;
+    }
+
+    .buttonbar__label {
+        margin-left: 0;
+        margin-bottom: 1.2rem;
+        min-width: 24rem;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .resources {
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .code-block {
+        width: 100%;
     }
 }
