@@ -574,6 +574,7 @@ a {
     background-color: var(--grey-bg);
     border: #E5E7EB solid 1px;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .details:not(:last-child) { 
