@@ -271,7 +271,7 @@ a {
 
     width: 5.2rem;
     height: 5.2rem;
-    border-radius: 1.4rem;
+    border-radius: 1rem;
 
     background-color: var(--php-white);
 }
@@ -547,6 +547,7 @@ a {
 .download__text {
     font-size: var(--font-16);
     color: var(--font-color-lighter);
+    line-height: 2.4rem;
 }
 
 .installation {
