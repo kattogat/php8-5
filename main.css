@@ -282,6 +282,10 @@ a {
     background-color: #FFEDD4;
 }
 
+.the-thing--purple {
+    background-color: var(--php-purple);
+}
+
 .feature {
     margin-top: 12.8rem;
 
@@ -598,4 +602,39 @@ a {
 .alert a {
     text-decoration-line: underline;
     color: #1C398E;
+}
+
+.resources {
+    color: var(--font-color-lighter);
+    margin-top: 4.8rem;
+    max-width: 83rem;
+    width: 100%;
+    line-height: 2.4rem;
+    margin-bottom: 8rem;
+}
+
+.block-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    background: linear-gradient(90deg, #F9FAFB 0%, #FFFFFF 100%);
+    border: #E5E7EB solid 2px;
+    border-radius: 1.4rem;
+    padding: 2.4rem;
+}
+
+.block-link:not(:last-child) { 
+   margin-bottom: 1.6rem;
+}
+
+.block-link__icon {
+    margin-left: auto;
+    margin-right: 1.4rem;
+}
+
+.block-link-white {
+    filter: grayscale(1) brightness(0.1) invert(1);
+    width: 2.1rem;
 }
