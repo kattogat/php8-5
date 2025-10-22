@@ -509,3 +509,36 @@ a {
     font-size: var(--font-16);
     line-height: 2.4rem;
 }
+
+.download {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.8rem;
+}
+
+.download__block {
+    background-color: var(--grey-bg);
+    border: #E5E7EB solid 2px;
+    border-radius: 1.4rem;
+    padding: 2.6rem;
+}
+
+.download__block:not(:last-child) { 
+   margin-right: 2.4rem;
+}
+
+.download__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+}
+
+.download__title {
+    font-size: var(--font-20);
+}
+
+.download__text {
+    font-size: var(--font-16);
+    color: var(--font-color-lighter);
+}
